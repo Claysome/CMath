@@ -1,0 +1,1 @@
+/usr/bin/g++   -g    CMakeFiles/CMath.dir/test.cpp.o  -o CMath -rdynamic 

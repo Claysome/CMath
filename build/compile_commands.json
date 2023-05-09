@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/root/workspace/CMath/build",
+  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/entrance.dir/src/main.cpp.o -c /root/workspace/CMath/src/main.cpp",
+  "file": "/root/workspace/CMath/src/main.cpp"
+}
+]
