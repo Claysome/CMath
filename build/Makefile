@@ -138,6 +138,30 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/matlib.o: src/matlib.cpp.o
+.PHONY : src/matlib.o
+
+# target to build an object file
+src/matlib.cpp.o:
+	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/matlib.cpp.o
+.PHONY : src/matlib.cpp.o
+
+src/matlib.i: src/matlib.cpp.i
+.PHONY : src/matlib.i
+
+# target to preprocess a source file
+src/matlib.cpp.i:
+	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/matlib.cpp.i
+.PHONY : src/matlib.cpp.i
+
+src/matlib.s: src/matlib.cpp.s
+.PHONY : src/matlib.s
+
+# target to generate assembly for a file
+src/matlib.cpp.s:
+	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/matlib.cpp.s
+.PHONY : src/matlib.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,6 +174,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/matlib.o"
+	@echo "... src/matlib.i"
+	@echo "... src/matlib.s"
 .PHONY : help
 
 

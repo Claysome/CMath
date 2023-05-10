@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/matlib.h
+
+/root/workspace/CMath/src/matlib.cpp
+iostream
+-
+cmath
+-
+matlib.h
+/root/workspace/CMath/src/matlib.h
+

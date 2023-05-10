@@ -75,14 +75,39 @@ CMakeFiles/entrance.dir/src/main.cpp.o.provides: CMakeFiles/entrance.dir/src/mai
 
 CMakeFiles/entrance.dir/src/main.cpp.o.provides.build: CMakeFiles/entrance.dir/src/main.cpp.o
 
+CMakeFiles/entrance.dir/src/matlib.cpp.o: CMakeFiles/entrance.dir/flags.make
+CMakeFiles/entrance.dir/src/matlib.cpp.o: ../src/matlib.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/CMath/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/entrance.dir/src/matlib.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/entrance.dir/src/matlib.cpp.o -c /root/workspace/CMath/src/matlib.cpp
+
+CMakeFiles/entrance.dir/src/matlib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/entrance.dir/src/matlib.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/CMath/src/matlib.cpp > CMakeFiles/entrance.dir/src/matlib.cpp.i
+
+CMakeFiles/entrance.dir/src/matlib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/entrance.dir/src/matlib.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/CMath/src/matlib.cpp -o CMakeFiles/entrance.dir/src/matlib.cpp.s
+
+CMakeFiles/entrance.dir/src/matlib.cpp.o.requires:
+.PHONY : CMakeFiles/entrance.dir/src/matlib.cpp.o.requires
+
+CMakeFiles/entrance.dir/src/matlib.cpp.o.provides: CMakeFiles/entrance.dir/src/matlib.cpp.o.requires
+	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/matlib.cpp.o.provides.build
+.PHONY : CMakeFiles/entrance.dir/src/matlib.cpp.o.provides
+
+CMakeFiles/entrance.dir/src/matlib.cpp.o.provides.build: CMakeFiles/entrance.dir/src/matlib.cpp.o
+
 # Object files for target entrance
 entrance_OBJECTS = \
-"CMakeFiles/entrance.dir/src/main.cpp.o"
+"CMakeFiles/entrance.dir/src/main.cpp.o" \
+"CMakeFiles/entrance.dir/src/matlib.cpp.o"
 
 # External object files for target entrance
 entrance_EXTERNAL_OBJECTS =
 
 entrance: CMakeFiles/entrance.dir/src/main.cpp.o
+entrance: CMakeFiles/entrance.dir/src/matlib.cpp.o
 entrance: CMakeFiles/entrance.dir/build.make
 entrance: CMakeFiles/entrance.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable entrance"
@@ -93,6 +118,7 @@ CMakeFiles/entrance.dir/build: entrance
 .PHONY : CMakeFiles/entrance.dir/build
 
 CMakeFiles/entrance.dir/requires: CMakeFiles/entrance.dir/src/main.cpp.o.requires
+CMakeFiles/entrance.dir/requires: CMakeFiles/entrance.dir/src/matlib.cpp.o.requires
 .PHONY : CMakeFiles/entrance.dir/requires
 
 CMakeFiles/entrance.dir/clean:

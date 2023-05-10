@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /root/workspace/CMath/build
 CMakeFiles/entrance.dir/all:
 	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/depend
 	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/CMath/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/CMath/build/CMakeFiles  1 2
 	@echo "Built target entrance"
 .PHONY : CMakeFiles/entrance.dir/all
 
@@ -72,7 +72,7 @@ all: CMakeFiles/entrance.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/entrance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/CMath/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/CMath/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/entrance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/CMath/build/CMakeFiles 0
 .PHONY : CMakeFiles/entrance.dir/rule

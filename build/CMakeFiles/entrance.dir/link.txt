@@ -1,1 +1,1 @@
-/usr/bin/g++   -g    CMakeFiles/entrance.dir/src/main.cpp.o  -o entrance -rdynamic 
+/usr/bin/g++   -g    CMakeFiles/entrance.dir/src/main.cpp.o CMakeFiles/entrance.dir/src/matlib.cpp.o  -o entrance -rdynamic 

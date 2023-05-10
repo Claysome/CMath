@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/entrance.dir/src/main.cpp.o"
+  "CMakeFiles/entrance.dir/src/matlib.cpp.o"
   "entrance.pdb"
   "entrance"
 )

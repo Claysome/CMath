@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/root/workspace/CMath/src/main.cpp" "/root/workspace/CMath/build/CMakeFiles/entrance.dir/src/main.cpp.o"
+  "/root/workspace/CMath/src/matlib.cpp" "/root/workspace/CMath/build/CMakeFiles/entrance.dir/src/matlib.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
