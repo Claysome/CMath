@@ -1,1 +1,1 @@
-/root/workspace/CMath/build/CMakeFiles/entrance.dir
+/root/workspace/CMath/build/CMakeFiles/testMacro.dir

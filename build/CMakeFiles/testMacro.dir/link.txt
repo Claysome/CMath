@@ -1,0 +1,1 @@
+/usr/bin/g++   -g    CMakeFiles/testMacro.dir/src/main.cpp.o CMakeFiles/testMacro.dir/src/matlib.cpp.o CMakeFiles/testMacro.dir/src/testing.cpp.o  -o testMacro -rdynamic 

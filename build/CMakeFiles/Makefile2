@@ -56,38 +56,38 @@ CMAKE_SOURCE_DIR = /root/workspace/CMath
 CMAKE_BINARY_DIR = /root/workspace/CMath/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/entrance.dir
+# Target rules for target CMakeFiles/testMacro.dir
 
 # All Build rule for target.
-CMakeFiles/entrance.dir/all:
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/depend
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/CMath/build/CMakeFiles  1 2
-	@echo "Built target entrance"
-.PHONY : CMakeFiles/entrance.dir/all
+CMakeFiles/testMacro.dir/all:
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/depend
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/CMath/build/CMakeFiles  1 2 3
+	@echo "Built target testMacro"
+.PHONY : CMakeFiles/testMacro.dir/all
 
 # Include target in all.
-all: CMakeFiles/entrance.dir/all
+all: CMakeFiles/testMacro.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/entrance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/CMath/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/entrance.dir/all
+CMakeFiles/testMacro.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/CMath/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testMacro.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/CMath/build/CMakeFiles 0
-.PHONY : CMakeFiles/entrance.dir/rule
+.PHONY : CMakeFiles/testMacro.dir/rule
 
 # Convenience name for target.
-entrance: CMakeFiles/entrance.dir/rule
-.PHONY : entrance
+testMacro: CMakeFiles/testMacro.dir/rule
+.PHONY : testMacro
 
 # clean rule for target.
-CMakeFiles/entrance.dir/clean:
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/clean
-.PHONY : CMakeFiles/entrance.dir/clean
+CMakeFiles/testMacro.dir/clean:
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/clean
+.PHONY : CMakeFiles/testMacro.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/entrance.dir/clean
+clean: CMakeFiles/testMacro.dir/clean
 .PHONY : clean
 
 #=============================================================================

@@ -8,10 +8,8 @@
 
 ../include/matlib.h
 
-/root/workspace/CMath/src/matlib.cpp
+/root/workspace/CMath/src/main.cpp
 iostream
--
-cmath
 -
 matlib.h
 /root/workspace/CMath/src/matlib.h

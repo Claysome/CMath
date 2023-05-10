@@ -102,24 +102,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named entrance
+# Target rules for targets named testMacro
 
 # Build rule for target.
-entrance: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 entrance
-.PHONY : entrance
+testMacro: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testMacro
+.PHONY : testMacro
 
 # fast build rule for target.
-entrance/fast:
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/build
-.PHONY : entrance/fast
+testMacro/fast:
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/build
+.PHONY : testMacro/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -127,7 +127,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -135,7 +135,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/matlib.o: src/matlib.cpp.o
@@ -143,7 +143,7 @@ src/matlib.o: src/matlib.cpp.o
 
 # target to build an object file
 src/matlib.cpp.o:
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/matlib.cpp.o
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/matlib.cpp.o
 .PHONY : src/matlib.cpp.o
 
 src/matlib.i: src/matlib.cpp.i
@@ -151,7 +151,7 @@ src/matlib.i: src/matlib.cpp.i
 
 # target to preprocess a source file
 src/matlib.cpp.i:
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/matlib.cpp.i
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/matlib.cpp.i
 .PHONY : src/matlib.cpp.i
 
 src/matlib.s: src/matlib.cpp.s
@@ -159,8 +159,32 @@ src/matlib.s: src/matlib.cpp.s
 
 # target to generate assembly for a file
 src/matlib.cpp.s:
-	$(MAKE) -f CMakeFiles/entrance.dir/build.make CMakeFiles/entrance.dir/src/matlib.cpp.s
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/matlib.cpp.s
 .PHONY : src/matlib.cpp.s
+
+src/testing.o: src/testing.cpp.o
+.PHONY : src/testing.o
+
+# target to build an object file
+src/testing.cpp.o:
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/testing.cpp.o
+.PHONY : src/testing.cpp.o
+
+src/testing.i: src/testing.cpp.i
+.PHONY : src/testing.i
+
+# target to preprocess a source file
+src/testing.cpp.i:
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/testing.cpp.i
+.PHONY : src/testing.cpp.i
+
+src/testing.s: src/testing.cpp.s
+.PHONY : src/testing.s
+
+# target to generate assembly for a file
+src/testing.cpp.s:
+	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/testing.cpp.s
+.PHONY : src/testing.cpp.s
 
 # Help Target
 help:
@@ -169,14 +193,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... entrance"
 	@echo "... rebuild_cache"
+	@echo "... testMacro"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/matlib.o"
 	@echo "... src/matlib.i"
 	@echo "... src/matlib.s"
+	@echo "... src/testing.o"
+	@echo "... src/testing.i"
+	@echo "... src/testing.s"
 .PHONY : help
 
 
