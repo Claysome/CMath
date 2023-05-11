@@ -57,8 +57,8 @@ static void testNormInv() {
 }
 
 void testMatlib() {
-    setDebugEnabled(true);
+    // setDebugEnabled(true);
     TEST(testNormCdf);
-    setDebugEnabled(false);
+    // setDebugEnabled(false);
     TEST(testNormInv);
 }

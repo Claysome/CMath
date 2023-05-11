@@ -102,24 +102,72 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testMacro
+# Target rules for targets named testClasses
 
 # Build rule for target.
-testMacro: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testMacro
-.PHONY : testMacro
+testClasses: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testClasses
+.PHONY : testClasses
 
 # fast build rule for target.
-testMacro/fast:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/build
-.PHONY : testMacro/fast
+testClasses/fast:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/build
+.PHONY : testClasses/fast
+
+src/charts.o: src/charts.cpp.o
+.PHONY : src/charts.o
+
+# target to build an object file
+src/charts.cpp.o:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/charts.cpp.o
+.PHONY : src/charts.cpp.o
+
+src/charts.i: src/charts.cpp.i
+.PHONY : src/charts.i
+
+# target to preprocess a source file
+src/charts.cpp.i:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/charts.cpp.i
+.PHONY : src/charts.cpp.i
+
+src/charts.s: src/charts.cpp.s
+.PHONY : src/charts.s
+
+# target to generate assembly for a file
+src/charts.cpp.s:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/charts.cpp.s
+.PHONY : src/charts.cpp.s
+
+src/geometry.o: src/geometry.cpp.o
+.PHONY : src/geometry.o
+
+# target to build an object file
+src/geometry.cpp.o:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/geometry.cpp.o
+.PHONY : src/geometry.cpp.o
+
+src/geometry.i: src/geometry.cpp.i
+.PHONY : src/geometry.i
+
+# target to preprocess a source file
+src/geometry.cpp.i:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/geometry.cpp.i
+.PHONY : src/geometry.cpp.i
+
+src/geometry.s: src/geometry.cpp.s
+.PHONY : src/geometry.s
+
+# target to generate assembly for a file
+src/geometry.cpp.s:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/geometry.cpp.s
+.PHONY : src/geometry.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -127,7 +175,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -135,7 +183,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/matlib.o: src/matlib.cpp.o
@@ -143,7 +191,7 @@ src/matlib.o: src/matlib.cpp.o
 
 # target to build an object file
 src/matlib.cpp.o:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/matlib.cpp.o
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/matlib.cpp.o
 .PHONY : src/matlib.cpp.o
 
 src/matlib.i: src/matlib.cpp.i
@@ -151,7 +199,7 @@ src/matlib.i: src/matlib.cpp.i
 
 # target to preprocess a source file
 src/matlib.cpp.i:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/matlib.cpp.i
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/matlib.cpp.i
 .PHONY : src/matlib.cpp.i
 
 src/matlib.s: src/matlib.cpp.s
@@ -159,32 +207,32 @@ src/matlib.s: src/matlib.cpp.s
 
 # target to generate assembly for a file
 src/matlib.cpp.s:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/matlib.cpp.s
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/matlib.cpp.s
 .PHONY : src/matlib.cpp.s
 
-src/testing.o: src/testing.cpp.o
-.PHONY : src/testing.o
+src/usageExamples.o: src/usageExamples.cpp.o
+.PHONY : src/usageExamples.o
 
 # target to build an object file
-src/testing.cpp.o:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/testing.cpp.o
-.PHONY : src/testing.cpp.o
+src/usageExamples.cpp.o:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/usageExamples.cpp.o
+.PHONY : src/usageExamples.cpp.o
 
-src/testing.i: src/testing.cpp.i
-.PHONY : src/testing.i
+src/usageExamples.i: src/usageExamples.cpp.i
+.PHONY : src/usageExamples.i
 
 # target to preprocess a source file
-src/testing.cpp.i:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/testing.cpp.i
-.PHONY : src/testing.cpp.i
+src/usageExamples.cpp.i:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/usageExamples.cpp.i
+.PHONY : src/usageExamples.cpp.i
 
-src/testing.s: src/testing.cpp.s
-.PHONY : src/testing.s
+src/usageExamples.s: src/usageExamples.cpp.s
+.PHONY : src/usageExamples.s
 
 # target to generate assembly for a file
-src/testing.cpp.s:
-	$(MAKE) -f CMakeFiles/testMacro.dir/build.make CMakeFiles/testMacro.dir/src/testing.cpp.s
-.PHONY : src/testing.cpp.s
+src/usageExamples.cpp.s:
+	$(MAKE) -f CMakeFiles/testClasses.dir/build.make CMakeFiles/testClasses.dir/src/usageExamples.cpp.s
+.PHONY : src/usageExamples.cpp.s
 
 # Help Target
 help:
@@ -194,16 +242,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... testMacro"
+	@echo "... testClasses"
+	@echo "... src/charts.o"
+	@echo "... src/charts.i"
+	@echo "... src/charts.s"
+	@echo "... src/geometry.o"
+	@echo "... src/geometry.i"
+	@echo "... src/geometry.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/matlib.o"
 	@echo "... src/matlib.i"
 	@echo "... src/matlib.s"
-	@echo "... src/testing.o"
-	@echo "... src/testing.i"
-	@echo "... src/testing.s"
+	@echo "... src/usageExamples.o"
+	@echo "... src/usageExamples.i"
+	@echo "... src/usageExamples.s"
 .PHONY : help
 
 

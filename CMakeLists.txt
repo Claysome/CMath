@@ -9,7 +9,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 include_directories(include)
 
-add_executable(testMacro src/main.cpp
-                        src/matlib.cpp
-                        src/testing.cpp)
+# add_executable(testMacro src/main.cpp
+#                          src/matlib.cpp
+#                          src/testing.cpp)
 
+add_executable(testClasses src/main.cpp
+                           src/matlib.cpp
+                           src/geometry.cpp
+                           src/charts.cpp
+                           src/usageExamples.cpp)

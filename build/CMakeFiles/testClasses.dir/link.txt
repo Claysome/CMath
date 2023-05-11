@@ -1,0 +1,1 @@
+/usr/bin/g++   -g    CMakeFiles/testClasses.dir/src/main.cpp.o CMakeFiles/testClasses.dir/src/matlib.cpp.o CMakeFiles/testClasses.dir/src/geometry.cpp.o CMakeFiles/testClasses.dir/src/charts.cpp.o CMakeFiles/testClasses.dir/src/usageExamples.cpp.o  -o testClasses -rdynamic 
