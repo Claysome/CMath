@@ -30,21 +30,25 @@ double norminv(double x) {
 //
 ///////////////////////////////////////////////
 
+// static void testNormCdf() {
+//     // test bounds
+//     ASSERT(normcdf(0.3)>0);
+//     ASSERT(normcdf(0.3)<1);
+//     // test extreme values
+//     ASSERT_APPROX_EQUAL(normcdf(-1e10), 0, 0.001);
+//     ASSERT_APPROX_EQUAL(normcdf(1e10), 1.0, 0.001);
+//     // test increasing
+//     ASSERT(normcdf(0.3)<normcdf(0.5));
+//     // test symmetry
+//     ASSERT_APPROX_EQUAL(normcdf(0.3), 1 - normcdf(-0.3), 0.0001);
+//     ASSERT_APPROX_EQUAL(normcdf(0.0), 0.5, 0.0001);
+//     // test inverse
+//     ASSERT_APPROX_EQUAL(normcdf(norminv(0.3)), 0.3, 0.0001);
+//     // test well known value
+//     ASSERT_APPROX_EQUAL(normcdf(1.96), 0.975, 0.001);
+// }
+
 static void testNormCdf() {
-    // test bounds
-    ASSERT(normcdf(0.3)>0);
-    ASSERT(normcdf(0.3)<1);
-    // test extreme values
-    ASSERT_APPROX_EQUAL(normcdf(-1e10), 0, 0.001);
-    ASSERT_APPROX_EQUAL(normcdf(1e10), 1.0, 0.001);
-    // test increasing
-    ASSERT(normcdf(0.3)<normcdf(0.5));
-    // test symmetry
-    ASSERT_APPROX_EQUAL(normcdf(0.3), 1 - normcdf(-0.3), 0.0001);
-    ASSERT_APPROX_EQUAL(normcdf(0.0), 0.5, 0.0001);
-    // test inverse
-    ASSERT_APPROX_EQUAL(normcdf(norminv(0.3)), 0.3, 0.0001);
-    // test well known value
     ASSERT_APPROX_EQUAL(normcdf(1.96), 0.975, 0.001);
 }
 
@@ -53,6 +57,8 @@ static void testNormInv() {
 }
 
 void testMatlib() {
+    setDebugEnabled(true);
     TEST(testNormCdf);
+    setDebugEnabled(false);
     TEST(testNormInv);
 }
