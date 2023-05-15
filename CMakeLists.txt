@@ -13,8 +13,15 @@ include_directories(include)
 #                          src/matlib.cpp
 #                          src/testing.cpp)
 
-add_executable(testClasses src/main.cpp
+# add_executable(testClasses src/main.cpp
+#                            src/matlib.cpp
+#                            src/geometry.cpp
+#                            src/charts.cpp
+#                            src/usageExamples.cpp)
+
+add_executable(testBSM     src/main.cpp
                            src/matlib.cpp
                            src/geometry.cpp
-                           src/charts.cpp
-                           src/usageExamples.cpp)
+                           src/PieChart.cpp
+                           src/CallOption.cpp
+                           src/BlackScholesModel.cpp)                    

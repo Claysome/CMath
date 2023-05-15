@@ -1,27 +1,32 @@
 [
 {
   "directory": "/root/workspace/CMath/build",
-  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testClasses.dir/src/main.cpp.o -c /root/workspace/CMath/src/main.cpp",
+  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testBSM.dir/src/main.cpp.o -c /root/workspace/CMath/src/main.cpp",
   "file": "/root/workspace/CMath/src/main.cpp"
 },
 {
   "directory": "/root/workspace/CMath/build",
-  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testClasses.dir/src/matlib.cpp.o -c /root/workspace/CMath/src/matlib.cpp",
+  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testBSM.dir/src/matlib.cpp.o -c /root/workspace/CMath/src/matlib.cpp",
   "file": "/root/workspace/CMath/src/matlib.cpp"
 },
 {
   "directory": "/root/workspace/CMath/build",
-  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testClasses.dir/src/geometry.cpp.o -c /root/workspace/CMath/src/geometry.cpp",
+  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testBSM.dir/src/geometry.cpp.o -c /root/workspace/CMath/src/geometry.cpp",
   "file": "/root/workspace/CMath/src/geometry.cpp"
 },
 {
   "directory": "/root/workspace/CMath/build",
-  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testClasses.dir/src/charts.cpp.o -c /root/workspace/CMath/src/charts.cpp",
-  "file": "/root/workspace/CMath/src/charts.cpp"
+  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testBSM.dir/src/PieChart.cpp.o -c /root/workspace/CMath/src/PieChart.cpp",
+  "file": "/root/workspace/CMath/src/PieChart.cpp"
 },
 {
   "directory": "/root/workspace/CMath/build",
-  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testClasses.dir/src/usageExamples.cpp.o -c /root/workspace/CMath/src/usageExamples.cpp",
-  "file": "/root/workspace/CMath/src/usageExamples.cpp"
+  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testBSM.dir/src/CallOption.cpp.o -c /root/workspace/CMath/src/CallOption.cpp",
+  "file": "/root/workspace/CMath/src/CallOption.cpp"
+},
+{
+  "directory": "/root/workspace/CMath/build",
+  "command": "/usr/bin/g++    -g -I/root/workspace/CMath/include    -o CMakeFiles/testBSM.dir/src/BlackScholesModel.cpp.o -c /root/workspace/CMath/src/BlackScholesModel.cpp",
+  "file": "/root/workspace/CMath/src/BlackScholesModel.cpp"
 }
 ]
